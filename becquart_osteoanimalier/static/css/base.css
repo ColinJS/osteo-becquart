@@ -1,0 +1,186 @@
+{% load static %}
+* {box-sizing:border-box}
+html, body{
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+    color: rgb(24,93,130);
+}
+.feather{
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.header-content{
+    padding: 10px 2vw;
+    position: relative;
+    height: 75px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.site-brand{
+    display: inline-block;
+    font-size: 1.5vw;
+    position: absolute;
+    bottom: 15px;
+    left: 2vw;
+}
+.logo{
+    height: 55px;
+    vertical-align: sub;
+    margin-right: 30px;
+}
+.site-menu{
+    display: inline-block;
+    position: absolute;
+    bottom: 15px;
+    right: 2vw;
+    font-size: 1.5vw;
+}
+.site-menu a,a:visited,a:active,a:link{
+    margin-left: 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(24,93,130);
+}
+.site-menu a:hover{
+    color: rgb(125,167,189);
+}
+.dropdown{
+    display: inline-block;
+    position: relative;
+}
+.drop-content{
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 10px 0px;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+    z-index: 1;
+}
+.drop-content a{
+    display: block;
+    font-size: 1vw;
+    margin-top: 10px;
+}
+.dropdown:hover .drop-content{
+    display: block;
+}
+.contact{
+    font-size: 1.2vw;
+    border: 2px rgb(24,93,130) solid;
+    padding: 0.2vw 0.5vw;
+}
+.contact:hover{
+    border: 2px rgb(125,167,189) solid;
+}
+.bg1{
+    height: 75%;
+}
+.bg2{
+    height: 50%;
+}
+.bg3{
+    height: 50%;
+}
+.bg {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.title-container{
+    width: 100%;
+    text-align: center;
+    padding-top: 25vh;
+    color: white;
+}
+.title-div{
+    display: inline-block;
+    padding: 0.5vw 3vw;
+    background-color: rgba(0,0,0, 0.2);
+    border: 1px white solid;
+}
+#contact{
+    padding: 2vw;
+    text-align: center;
+    width: auto;
+}
+#contact div{
+    display: inline-block;
+    vertical-align: middle;
+}
+input[type=text], select, textarea, input[type=email] {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid rgb(24,93,130); /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+button[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: center;
+}
+button[type=submit]:hover {
+  background-color: #45a049;
+}
+.title-form{
+    width: 100%;
+}
+.contact-link{
+    margin: 0px;
+    margin-top: 20px;
+}
+.contact-description{
+    width: 20%;
+    text-align: left;
+}
+.contact-form{
+    /*border-radius: 5px;*/
+    /*border: 1px rgb(24,93,130) solid;*/
+    /*background-color: #f2f2f2;*/
+    padding: 20px;
+    text-align: left;
+    width: 60%;
+}
+.part-title{
+    text-align: center;
+}
+
+.big-part{
+    width: 100%;
+    padding: 2vw;
+}
+
+.footer-information{
+    padding: 2vw;
+    text-align: center;
+}
+
+.footer-information div{
+    margin: 0px 50px;
+    display: inline-block;
+    font-size: 1vw;
+    text-align: left;
+    vertical-align: top;
+}
+.footer-information a{
+    margin: 0px;
+}
+.footer-information div .feather{
+    margin-right: 5px;
+    height: 15px;
+}

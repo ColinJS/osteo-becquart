@@ -1,0 +1,168 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Salomé Becquart - Ostéopathe Animalier</title>
+    <meta name="description" content="" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="{% static "css/base.css" %}" />
+    <link rel="stylesheet" href="{% static "css/galery.css" %}" />
+    <link rel="shortcut icon" type="image/png" href="{% static "images/favicon.ico" %}"/>
+</head>
+<body>
+    <header class="header-content clearfix">
+        <a class="site-brand" href="/">
+            <img class="logo" src="{% static "images/frise_animaux.png" %}"/>
+            Salomé Becquart
+        </a>
+        <div class="site-menu">
+            <a href="#">Accueil</a>
+            <a href="#presentation">Présentation</a>
+            <div class="dropdown">
+                <a class="dropbtn" href="#osteopathie">L'Ostéopathie</a>
+                <div class="drop-content">
+                    <a href="#premier">La consultation ostéopathique</a>
+                    <a href="#deuxieme">Quand consulter ?</a>
+                </div>
+            </div>
+            <a href="#galerie">Galerie</a>
+            <a class="contact" href="#contact">Contact</a>
+        </div>
+    </header>
+    <div class="bg bg1" style="background-image: linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.2)), url('{% static "images/opps.jpg" %}');">
+        {% block page_content %}{% endblock %}
+        <div class="title-container">
+            <div class="title-div">
+                <h1>OSTEOPATHE ANIMALIER</h1>
+                <h2>Consultation à domicile</h2>
+                <p>
+                    Isère, Drôme, Savoie
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <h2 class="part-title">
+            Contact
+        </h2>
+        <div class="contact-description">
+            <h3>Salomé Becquart</h3>
+            <p>Ostéopathe Animalier</p>
+            <p>Chiens, chats, chevaux, bovins</p>
+            <p>Déplacement à domicile (Isère, Drôme, Savoie)</p>
+            <div class="contact-link">
+                <p><i data-feather="phone"></i> <a href="tel:0652579329">06 52 57 93 29</a></p>
+                <p><i data-feather="mail"></i> <a href="mailto:becquart.ostéo@gmail.com">becquart.osteo@gmail.com</a></p>
+                <p><i data-feather="facebook"></i> <a href="https://www.facebook.com/sbec.osteopatheanimalier/">Salomé Becquart</a></p>
+            </div>
+        </div>
+        <div class="contact-form">
+            {% if valid.status %}
+                <p>{{ valid.message }}</p>
+            {% endif %}
+        <form method="post">
+            {% csrf_token %}
+            {{ form }}
+            <button type="submit">Envoyer</button>
+        </form>
+        </div>
+    </div>
+    <div class="bg bg2" style="background-image: linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.2)), url('{% static "images/bg2.jpg" %}');"></div>
+    <div id="presentation" class="big-part">
+        <h2 class="part-title">Présentation</h2>
+        <p>
+            <p>Je suis titulaire d’un Diplôme d’Ostéopathie Animale (DOA) ainsi que d’une Maîtrise en Ostéopathie Animale après avoir suivi une formation de 5 ans au National Institute of Animal Osteopathy (NIAO) à Bois-Guillaume (76). </p>
+            <p>Dès la première année du cursus les cours sont organisés de manière à avoir 50% de pratique et 50% de théorie. L’équipe enseignante est composée de vétérinaires, biologistes, ostéopathes humains et animaliers ainsi que d’intervenants extérieurs (dentiste, maréchal ferrant, comportementaliste…). L’anatomie, la physiologie, la biomécanique, la nutrition sont quelques exemples des matières enseignées que ce soit sur le cheval, le chien, le chat et les bovins. Grâce à cette formation, j’ai appris à utiliser un panel de techniques ostéopathiques permettant de m’adapter à chaque patient et situation (technique structurelle, tissulaire, fasciale, viscérale…) </p>
+            <p>Je suis également inscrite au RNCP sous le n°0A 208. Depuis 2017 l’exercice de l’ostéopathie non vétérinaire est encadré par plusieurs décrets que vous pouvez consulter sur le site LegiFrance. </p>
+            <p>J’exerce  mon métier d’ostéopathe animalier à mon compte en Isère, Drôme et Savoie. Je me déplace à domicile pour soigner vos animaux (chiens, chats, chevaux, bovins). A l’issue de 6 mois de formation complémentaire, j’ai également commencé à travailler dès octobre 2019 en tant qu’hydropraticienne à Canémotion. (lien web vers le site).Ce centre de remise en forme, bien-être et préparation physique du chien de sport est situé à Echirolles. Il propose entre autres, des services d’éducation canine, d’ostéopathie, de soutien émotionnel ainsi que des séances d’hydrothérapie. Je vous invite à aller faire un tour sur le site !</p>
+        </p>
+    </div>
+    <div class="bg bg3" style="background-image: linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.2)), url('{% static "images/gribouille.jpg" %}');"></div>
+    <div id="osteopathie" class="big-part">
+        <h2 class="part-title">L'Ostéopathie</h2>
+        <p>
+            <p>L’ostéopathie est une thérapie manuelle qui s’emploie à déterminer et à traiter les restrictions de mobilité pouvant affecter l’ensemble des structures du corps. <br />
+            <p>Toute perte de mobilité, qu’elle soit d’origine ostéo-articulaire, musculaire, ligamentaire, viscérale, fasciale… nuit à la bonne circulation des fluides (sang, lymphe, liquide céphalo-rachidien), peut provoquer des troubles fonctionnels et altérer l’état de santé de l’individu. L’ostéopathie est fondée sur la capacité d’autoguérison du corps. Le.la praticien.ne, en s’assurant de la liberté de mouvement de l’ensemble des tissus du corps, permet à l’animal de garder un bon état de santé.</p>
+        </p>
+        <h3 id="premier">La consultation ostéopathique</h3>
+        <p>
+            <p>Dans un premier temps, l’ostéopathe recueille les antécédents vétérinaires de l’animal avant de
+            commencer l’observation de celui-ci en statique puis en mouvement. <br/>
+            Grâce à des tests palpatoires spécifiques, l’ostéopathe explore ensuite le corps à la recherche de zones de moindre motilité susceptibles d’altérer l’état de santé de l’animal. Les mains de l’ostéopathe vont trouver et réharmoniser l’ensemble des structures perturbées dans leur motilité. Les mains du thérapeute sont un support sur lequel le corps s’appuie afin de se libérer. </p>
+
+            <p>L’ostéopathe choisit la technique la mieux adaptée et la plus confortable, c'est-à-dire sans douleur pour l’animal, en fonction de son âge, de sa morphologie et de la zone du corps à traiter… Il est essentiel d’avoir l’accord du patient afin de ne pas créer de traumatismes et de respecter l’intégrité de son corps.
+            En général, il faut prévoir 48h de repos après une séance afin de laisser au corps le temps de retrouver son nouvel équilibre. Des conseils additionnels de rééducation peuvent également être donnés à l'issue de la séance, en fonction des cas.
+            Grâce aux connaissances et à l'expérience acquises au cours de son parcours, l'ostéopathe est capable d’établir un diagnostic d’exclusion et d’orienter le propriétaire vers un vétérinaire si le problème de l’animal dépasse son champ de compétences. Il ne travaille en aucun cas seul mais en complémentarité avec les autres professionnels de la santé animale (vétérinaire, dentiste, maréchal ferrant, éducateur, comportementaliste…)</p>
+        </p>
+        <h3 id="deuxieme">Quand consulter ?</h3>
+        <p>
+            <ul>
+                <li>Troubles locomoteurs (boiterie, raideur) </li>
+                <li>Gênes au travail, baisse de performance </li>
+                <li>Suivi de l’animal de sport (préparation à l’effort, aide à la récupération, optimisation des performances) </li>
+                <li>Douleurs (dorsalgie, sciatalgie, névralgie) </li>
+                <li>Troubles digestifs </li>
+                <li>Troubles du comportement (apathie, anxiété, anorexie, agressivité) </li>
+                <li>Œdème </li>
+                <li>Rééducation post-chirurgicale </li>
+                <li>Accompagnement de l’animal âgé </li>
+                <li>Suivi de gestation </li>
+                <li>Déformations chez le nouveau-né </li>
+                <li>Troubles de la fertilité </li>
+                <li>Otites, cystites et problèmes dermatologiques récurrents </li>
+                <li>Amélioration du bien-être en cas de pathologie chronique </li>
+            </ul>
+        <p>Mais avant tout à titre préventif ! Des troubles physiques ou émotionnels passant inaperçus aux yeux du propriétaire peuvent resurgir plusieurs années après. Il est conseillé de faire suivre son animal en ostéopathie régulièrement (annuellement voir tous les 6 mois) afin de prévenir des maux et pour son bien-être, notamment sur les sujets sportifs, âgés ou en en croissance.</p>
+        </p>
+    </div>
+    <div>
+        {{ galery }}
+    </div>
+    <footer class="footer-information">
+        <div>
+            <h5>Contact</h5>
+                    <p><i data-feather="phone"></i> <a href="tel:0652579329">06 52 57 93 29</a></p>
+                    <p><i data-feather="mail"></i> <a href="mailto:becquart.ostéo@gmail.com">becquart.osteo@gmail.com</a></p>
+                    <p><i data-feather="facebook"></i> <a href="https://www.facebook.com/sbec.osteopatheanimalier/">Salomé Becquart</a></p>
+        </div>
+        <div>
+            <h5>Mentions legals</h5>
+            <p>Blablaba</p>
+        </div>
+    </footer>
+    <script>
+
+
+        feather.replace()
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("slides-image");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        }
+    </script>
+</body>
+</html>
