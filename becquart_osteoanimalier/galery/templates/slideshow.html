@@ -93,7 +93,7 @@
     {% for picture in pictures %}
     <div class="slides-image fade">
         <div class="slide-number">{{ forloop.counter }} / {{ number_of_pictures }}</div>
-        <img src="{{ picture.url }}" style="width:100%">
+        <img src="{{ picture.url }}" style="height:100%">
         <div class="slide-text">{{ picture.description }}</div>
     </div>
     {% endfor %}
