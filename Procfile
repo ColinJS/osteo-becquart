@@ -1,0 +1,1 @@
+web: gunicorn becquart_osteoanimalier.wsgi --log-file -
