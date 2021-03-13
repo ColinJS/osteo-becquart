@@ -25,7 +25,7 @@ SECRET_KEY = '5q8b-x#68^7n31()@!as5%#i7jlt_@+8$$bm!2xbkg)%x8v#fc'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['colinjs.pythonanywhere.com']
+ALLOWED_HOSTS = ['colinjs.pythonanywhere.com', '127.0.0.1']
 
 
 # Application definition
@@ -57,7 +57,7 @@ ROOT_URLCONF = 'config.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, '../becquart_osteoanimalier/templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'becquart_osteoanimalier/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -126,8 +126,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = [os.path.join(BASE_DIR, '../becquart_osteoanimalier/static'),
-                    os.path.join(BASE_DIR, '../becquart_osteoanimalier/galery/static'),
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'becquart_osteoanimalier/static'),
+                    os.path.join(BASE_DIR, 'becquart_osteoanimalier/galery/static'),
                     ]
 
 # Mail config
