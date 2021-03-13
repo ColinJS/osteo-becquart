@@ -3,7 +3,7 @@ from django.db import models
 
 class Picture(models.Model):
     name = models.CharField(max_length=100)
-    description = models.CharField(max_length=200)
+    description = models.CharField(max_length=200, blank=True)
     url = models.URLField(max_length=300)
     state = models.BooleanField(default= True)
     order = models.SmallIntegerField(default=0) # Not null, unique, auto_order
