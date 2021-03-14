@@ -71,7 +71,7 @@
           <entry key="css" value="252" />
           <entry key="dummy" value="1" />
           <entry key="gitignore" value="7" />
-          <entry key="html" value="1407" />
+          <entry key="html" value="1421" />
           <entry key="py" value="2838" />
           <entry key="txt" value="8" />
         </counts>
@@ -79,7 +79,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="252" />
-          <entry key="HTML" value="1407" />
+          <entry key="HTML" value="1421" />
           <entry key="PLAIN_TEXT" value="45" />
           <entry key="Python" value="2838" />
         </counts>
@@ -112,8 +112,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/becquart_osteoanimalier/galery/templates/slideshow.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="102" column="88" lean-forward="true" selection-start-line="102" selection-start-column="88" selection-end-line="102" selection-end-column="88" />
+            <state relative-caret-position="352">
+              <caret line="108" column="62" selection-start-line="108" selection-start-column="62" selection-end-line="108" selection-end-column="62" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -584,8 +584,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/becquart_osteoanimalier/galery/templates/slideshow.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="102" column="88" lean-forward="true" selection-start-line="102" selection-start-column="88" selection-end-line="102" selection-end-column="88" />
+        <state relative-caret-position="352">
+          <caret line="108" column="62" selection-start-line="108" selection-start-column="62" selection-end-line="108" selection-end-column="62" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
