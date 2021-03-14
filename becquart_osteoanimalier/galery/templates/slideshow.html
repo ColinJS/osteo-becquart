@@ -20,6 +20,8 @@
         }
         .slides-image {
             display: none;
+            height: 100vh;
+            width: 100vw;
         }
         .slides-prev, .slides-next {
             cursor: pointer;
@@ -92,9 +94,9 @@
 
 <div class="slideshow-container" id="galerie">
     {% for picture in pictures %}
-    <div class="slides-image fade">
+    <div class="slides-image fade" style="background: url('{{ picture.url }}') center center / cover no-repeat;">
         <div class="slide-number">{{ forloop.counter }} / {{ number_of_pictures }}</div>
-        <img src="{{ picture.url }}" style="height:100%">
+        <!--<img src="{{ picture.url }}" style="height:100%">-->
         <div class="slide-text">{{ picture.description }}</div>
     </div>
     {% endfor %}
