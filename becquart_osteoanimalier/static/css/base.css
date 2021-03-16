@@ -16,11 +16,15 @@ html, body{
     padding: 10px 2vw;
     position: relative;
     height: 75px;
+    display: flex;
 }
 .clearfix::after {
     content: "";
     clear: both;
     display: table;
+}
+.logo-container{
+    flex: 1;
 }
 .site-brand{
     display: inline-block;
@@ -35,6 +39,7 @@ html, body{
     margin-right: 30px;
 }
 .site-menu{
+    flex: 6;
     display: inline-block;
     position: absolute;
     bottom: 15px;

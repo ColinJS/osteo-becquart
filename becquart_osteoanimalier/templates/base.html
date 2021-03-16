@@ -12,13 +12,16 @@
 </head>
 <body>
     <header class="header-content clearfix">
-        <a class="site-brand" href="/">
+        <div class="logo-container">
+            <a class="site-brand" href="/">
             <img class="logo" src="{% static "images/frise_animaux.png" %}"/>
             Salomé Becquart
-        </a>
+            </a>
+        </div>
+
         <div class="site-menu">
-            <a href="#">Accueil</a>
-            <a href="#presentation">Présentation</a>
+            <div><a href="#">Accueil</a></div>
+            <div><a href="#presentation">Présentation</a></div>
             <div class="dropdown">
                 <a class="dropbtn" href="#osteopathie">L'Ostéopathie</a>
                 <div class="drop-content">
@@ -26,8 +29,8 @@
                     <a href="#deuxieme">Quand consulter ?</a>
                 </div>
             </div>
-            <a href="#galerie">Galerie</a>
-            <a class="contact" href="#contact">Contact</a>
+            <div><a href="#galerie">Galerie</a></div>
+            <div><a class="contact" href="#contact">Contact</a></div>
         </div>
     </header>
     <div class="bg bg1" style="background-image: linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.2)), url('{% static "images/opps.jpg" %}');">
