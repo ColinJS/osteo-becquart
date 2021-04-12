@@ -1,5 +1,4 @@
 {% load static %}
-* {box-sizing:border-box}
 html, body{
     height: 100%;
     padding: 0px;
@@ -8,9 +7,6 @@ html, body{
     scroll-behavior: smooth;
     color: rgb(24,93,130);
 }
-html, body{
-        margin: 0;
-    }
     html{
         font-family: poppins;
         color: rgb(11,76,110);
@@ -19,7 +15,7 @@ html, body{
         text-rendering: optimizeLegibility;
         text-shadow: rgba(0,0,0,0.5) 0 0 1px;
     }
-    .bg{
+    .first-bg{
         height: 100vh;
         width: 100vw;
         display: flex;
@@ -113,32 +109,6 @@ html, body{
 .feather{
     vertical-align: middle;
     margin-right: 10px;
-}
-.header-content{
-    padding: 10px 2vw;
-    position: relative;
-    height: 75px;
-    display: flex;
-}
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-.logo-container{
-    flex: 1;
-}
-.site-brand{
-    display: inline-block;
-    font-size: 1.5vw;
-    position: absolute;
-    bottom: 15px;
-    left: 2vw;
-}
-.logo{
-    height: 55px;
-    vertical-align: sub;
-    margin-right: 30px;
 }
 .site-menu{
     flex: 6;
