@@ -159,9 +159,6 @@ html, body{
 .contact:hover{
     border: 2px rgb(125,167,189) solid;
 }
-.bg1{
-    height: 75%;
-}
 .bg2{
     height: 50%;
 }
