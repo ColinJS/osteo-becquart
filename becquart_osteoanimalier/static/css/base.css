@@ -100,10 +100,12 @@ html, body{
             padding: 10vh 0px 18vh 0px;
         }
         .menu-container{
-            display: none;
             top:0;
             height:100vh;
             flex-direction: column;
+        }
+        .hidden-menu{
+            display: none;
         }
     }
 .feather{

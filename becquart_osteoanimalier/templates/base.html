@@ -32,7 +32,7 @@
                 </div>
             </div>
         </div>
-        <div class="menu-container" id="menu-container">
+        <div class="menu-container hidden-menu" id="menu-container">
             <a class="menu-item" href="#">Accueil</a>
             <a class="menu-item" href="#">Présentation</a>
             <a class="menu-item" href="#">L'Ostéopathie</a>
@@ -132,10 +132,9 @@
 
         var imageContainer = document.getElementById("logo-click")
         var menu = document.getElementById('menu-container');
-        menu.style.display = "none"
 
         function showMenu(){
-            menu.style.display != "none" ? menu.style.display = "none" : menu.style.display = "flex";
+            menu.classList.toggle("hidden-menu");
         }
 
         menu.addEventListener("click",()=> showMenu());
