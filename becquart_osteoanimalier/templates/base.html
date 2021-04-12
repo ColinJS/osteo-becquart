@@ -11,38 +11,32 @@
     <link rel="shortcut icon" type="image/png" href="{% static "images/favicon.ico" %}"/>
 </head>
 <body>
-    <header class="header-content clearfix">
-        <div class="logo-container">
-            <a class="site-brand" href="/">
-            <img class="logo" src="{% static "images/frise_animaux.png" %}"/>
-            Salomé Becquart
-            </a>
-        </div>
-
-        <div class="site-menu">
-            <div><a href="#">Accueil</a></div>
-            <div><a href="#presentation">Présentation</a></div>
-            <div class="dropdown">
-                <a class="dropbtn" href="#osteopathie">L'Ostéopathie</a>
-                <div class="drop-content">
-                    <a href="#premier">La consultation ostéopathique</a>
-                    <a href="#deuxieme">Quand consulter ?</a>
+    <div class="bg bg1" style="background-image: linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.2)), url('../04_Dev/becquart_osteoanimalier_project/becquart_osteoanimalier/static/images/opps.jpg');">
+        <div class="pres-logo-container">
+            <div class="logo-container" id="logo-click">
+                <img class="logo" src="../04_Dev/becquart_osteoanimalier_project/becquart_osteoanimalier/static/images/Logo_Square.png" />
+            </div>
+            <div class="pres-container">
+                <div class="paragraph">
+                    <div>
+                        <div class="text-container secondary"><div>Ostéopathe</div> <div>animalier</div></div>
+                        <div class="text-container important"><div>Salomé</div> <div>Becquart</div></div>
+                        <div class="text-container secondary third"><div>Consultation</div> <div>à</div> <div>domicile</div></div>
+                    </div>
+                    <div>
+                        <div class="separation-bar"></div>
+                    </div>
+                    <div>
+                        <div class="text-container secondary third"><div>Isère</div> <div>Drôme</div> <div>Savoie</div></div>
+                    </div>
                 </div>
             </div>
-            <div><a href="#galerie">Galerie</a></div>
-            <div><a class="contact" href="#contact">Contact</a></div>
         </div>
-    </header>
-    <div class="bg bg1" style="background-image: linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.2)), url('{% static "images/opps.jpg" %}');">
-        {% block page_content %}{% endblock %}
-        <div class="title-container">
-            <div class="title-div">
-                <h1>OSTEOPATHE ANIMALIER</h1>
-                <h2>Consultation à domicile</h2>
-                <p>
-                    Isère, Drôme, Savoie
-                </p>
-            </div>
+        <div class="menu-container" id="menu-container">
+            <a class="menu-item" href="#">Accueil</a>
+            <a class="menu-item" href="#">Présentation</a>
+            <a class="menu-item" href="#">L'Ostéopathie</a>
+            <a class="menu-item" href="#">Galerie</a>
         </div>
     </div>
     <div id="contact">
@@ -136,6 +130,16 @@
     </footer>
     <script>
 
+        var imageContainer = document.getElementById("logo-click")
+        var menu = document.getElementById('menu-container');
+        menu.style.display = "none"
+
+        function showMenu(){
+            menu.style.display != "none" ? menu.style.display = "none" : menu.style.display = "flex";
+        }
+
+        menu.addEventListener("click",()=> showMenu());
+        imageContainer.addEventListener("click",()=> showMenu());
 
         feather.replace()
         var slideIndex = 1;

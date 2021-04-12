@@ -8,6 +8,108 @@ html, body{
     scroll-behavior: smooth;
     color: rgb(24,93,130);
 }
+html, body{
+        margin: 0;
+    }
+    html{
+        font-family: poppins;
+        color: rgb(11,76,110);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+        text-shadow: rgba(0,0,0,0.5) 0 0 1px;
+    }
+    .bg{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+    }
+    .pres-logo-container{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 17% 0px 5%;
+        box-sizing: border-box;
+    }
+    .logo-container{
+        height: 180px;
+        width: 180px;
+        text-align: center;
+    }
+    .logo-container img{
+        height: 100%;
+        margin: auto;
+    }
+    .pres-container{
+        background-color: white;
+        padding: 5px 20px;
+        width: 300px;
+        height: 170px;
+        font-family: Poppins;
+    }
+    .paragraph{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .text-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .important{
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 40%;
+    }
+    .secondary{
+        font-size: 28px;
+        font-weight: 300;
+    }
+    .third{
+        font-size: 25px;
+        line-height: 200%;
+    }
+    .separation-bar{
+        width: 80%;
+        height: 2px;
+        background-color: rgb(11,76,110);
+        margin: auto;
+    }
+    .menu-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 0 18%;
+        position: absolute;
+        top: 8%;
+        width: 100vw;
+        height: 50px;
+        background-color: white;
+    }
+    .menu-item{
+        font-family: poppins;
+        font-weight: 300;
+        font-size: 20px;
+    }
+    @media screen and (max-width: 800px) {
+        .pres-logo-container {
+            flex-direction: column;
+            padding: 10vh 0px 18vh 0px;
+        }
+        .menu-container{
+            display: none;
+            top:0;
+            height:100vh;
+            flex-direction: column;
+        }
+    }
 .feather{
     vertical-align: middle;
     margin-right: 10px;
@@ -40,6 +142,7 @@ html, body{
 }
 .site-menu{
     flex: 6;
+    flex-direc
     display: inline-block;
     position: absolute;
     bottom: 15px;
