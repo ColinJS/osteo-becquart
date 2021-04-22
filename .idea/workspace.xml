@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="717c4596-4529-4d81-a5ac-225389a33489" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/becquart_osteoanimalier/static/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/becquart_osteoanimalier/static/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/becquart_osteoanimalier/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/becquart_osteoanimalier/templates/base.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +69,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Procfile" value="29" />
-          <entry key="css" value="452" />
+          <entry key="css" value="498" />
           <entry key="dummy" value="1" />
           <entry key="gitignore" value="7" />
           <entry key="html" value="1562" />
@@ -81,7 +79,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="452" />
+          <entry key="CSS" value="498" />
           <entry key="HTML" value="1562" />
           <entry key="PLAIN_TEXT" value="45" />
           <entry key="Python" value="2838" />
@@ -103,8 +101,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/becquart_osteoanimalier/static/css/base.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="189" column="1" selection-start-line="189" selection-start-column="1" selection-end-line="189" selection-end-column="1" />
+            <state relative-caret-position="350">
+              <caret line="196" column="23" selection-start-line="196" selection-start-column="23" selection-end-line="196" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -610,8 +608,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/becquart_osteoanimalier/static/css/base.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="189" column="1" selection-start-line="189" selection-start-column="1" selection-end-line="189" selection-end-column="1" />
+        <state relative-caret-position="350">
+          <caret line="196" column="23" selection-start-line="196" selection-start-column="23" selection-end-line="196" selection-end-column="23" />
         </state>
       </provider>
     </entry>

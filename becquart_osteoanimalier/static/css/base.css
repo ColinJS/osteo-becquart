@@ -107,6 +107,9 @@ html, body{
         .hidden-menu{
             display: none;
         }
+        .contact-container{
+            flex-direction: column;
+        }
     }
 .feather{
     vertical-align: middle;
@@ -185,12 +188,16 @@ html, body{
 }
 #contact{
     padding: 2vw;
+    box-sizing: border-box;
     text-align: center;
     width: auto;
 }
 .contact-container{
     display: flex;
     flex-direction: row;
+    align-content: center;
+    align-items: center;
+    width: 100%;
 }
 input[type=text], select, textarea, input[type=email] {
     width: 100%; /* Full width */
@@ -222,16 +229,14 @@ button[type=submit]:hover {
     margin-top: 20px;
 }
 .contact-description{
-    width: 20%;
+    max-width: 60%;
+    flex-grow: 20;
     text-align: left;
 }
 .contact-form{
-    /*border-radius: 5px;*/
-    /*border: 1px rgb(24,93,130) solid;*/
-    /*background-color: #f2f2f2;*/
-    padding: 20px;
     text-align: left;
-    width: 60%;
+    flex-grow: 1;
+    max-width: 60%;
 }
 .part-title{
     text-align: center;
