@@ -188,9 +188,9 @@ html, body{
     text-align: center;
     width: auto;
 }
-#contact div{
-    display: inline-block;
-    vertical-align: middle;
+.contact-container{
+    display: flex;
+    flex-direction: row;
 }
 input[type=text], select, textarea, input[type=email] {
     width: 100%; /* Full width */

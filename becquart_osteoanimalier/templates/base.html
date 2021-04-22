@@ -43,26 +43,28 @@
         <h2 class="part-title">
             Contact
         </h2>
-        <div class="contact-description">
-            <h3>Salomé Becquart</h3>
-            <p>Ostéopathe Animalier</p>
-            <p>Chiens, chats, chevaux, bovins</p>
-            <p>Déplacement à domicile (Isère, Drôme, Savoie)</p>
-            <div class="contact-link">
-                <p><i data-feather="phone"></i> <a href="tel:0652579329">06 52 57 93 29</a></p>
-                <p><i data-feather="mail"></i> <a href="mailto:becquart.ostéo@gmail.com">becquart.osteo@gmail.com</a></p>
-                <p><i data-feather="facebook"></i> <a href="https://www.facebook.com/sbec.osteopatheanimalier/">Salomé Becquart</a></p>
+        <div  class="contact-container">
+            <div class="contact-description">
+                <h3>Salomé Becquart</h3>
+                <p>Ostéopathe Animalier</p>
+                <p>Chiens, chats, chevaux, bovins</p>
+                <p>Déplacement à domicile (Isère, Drôme, Savoie)</p>
+                <div class="contact-link">
+                    <p><i data-feather="phone"></i> <a href="tel:0652579329">06 52 57 93 29</a></p>
+                    <p><i data-feather="mail"></i> <a href="mailto:becquart.ostéo@gmail.com">becquart.osteo@gmail.com</a></p>
+                    <p><i data-feather="facebook"></i> <a href="https://www.facebook.com/sbec.osteopatheanimalier/">Salomé Becquart</a></p>
+                </div>
             </div>
-        </div>
-        <div class="contact-form">
-            {% if valid.status %}
-                <p>{{ valid.message }}</p>
-            {% endif %}
-        <form method="post">
-            {% csrf_token %}
-            {{ form }}
-            <button type="submit">Envoyer</button>
-        </form>
+            <div class="contact-form">
+                {% if valid.status %}
+                    <p>{{ valid.message }}</p>
+                {% endif %}
+                <form method="post">
+                    {% csrf_token %}
+                    {{ form }}
+                    <button type="submit">Envoyer</button>
+                </form>
+            </div>
         </div>
     </div>
     <div class="bg bg2" style="background-image: linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.2)), url('{% static "images/bg2.jpg" %}');"></div>
