@@ -60,7 +60,7 @@ html{
 .important{
     font-weight: 500;
     font-size: 34px;
-    line-height: 40%;
+    line-height: 50%;
 }
 .secondary{
     font-size: 28px;
@@ -266,5 +266,8 @@ button[type=submit]:hover {
     }
     .contact-container{
         flex-direction: column;
+    }
+    #contact{
+        padding: 2vw;
     }
 }
