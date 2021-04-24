@@ -25,7 +25,7 @@ SECRET_KEY = '5q8b-x#68^7n31()@!as5%#i7jlt_@+8$$bm!2xbkg)%x8v#fc'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['colinjs.pythonanywhere.com', '127.0.0.1', 'becquart-osteo.herokuapp.com']
+ALLOWED_HOSTS = ['colinjs.pythonanywhere.com', '127.0.0.1', 'becquart-osteo.herokuapp.com','www.osteopatheanimalier-becquart.fr','osteopatheanimalier-becquart.fr']
 
 
 # Application definition
