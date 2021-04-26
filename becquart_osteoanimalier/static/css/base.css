@@ -6,6 +6,7 @@ html, body{
     font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
     color: rgb(24,93,130);
+    box-sizing: border-box;
 }
 html{
     font-family: poppins;
@@ -228,11 +229,11 @@ button[type=submit]:hover {
 
 .big-part{
     width: 100%;
-    padding: 2vw;
+    padding: 2vw 10vw;
 }
 
 .footer-information{
-    padding: 2vw;
+    padding: 2vw 10vw;
     text-align: center;
 }
 
