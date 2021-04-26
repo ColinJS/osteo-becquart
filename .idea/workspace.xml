@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="717c4596-4529-4d81-a5ac-225389a33489" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/becquart_osteoanimalier/static/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/becquart_osteoanimalier/static/css/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/becquart_osteoanimalier/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/becquart_osteoanimalier/templates/base.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +72,7 @@
           <entry key="css" value="586" />
           <entry key="dummy" value="1" />
           <entry key="gitignore" value="7" />
-          <entry key="html" value="1629" />
+          <entry key="html" value="1630" />
           <entry key="py" value="2846" />
           <entry key="txt" value="8" />
         </counts>
@@ -80,7 +80,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="586" />
-          <entry key="HTML" value="1629" />
+          <entry key="HTML" value="1630" />
           <entry key="PLAIN_TEXT" value="45" />
           <entry key="Python" value="2846" />
         </counts>
@@ -89,7 +89,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/becquart_osteoanimalier/static/css/base.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
@@ -116,11 +116,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/becquart_osteoanimalier/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2032">
-              <caret line="127" column="13" selection-start-line="127" selection-start-column="13" selection-end-line="127" selection-end-column="13" />
+            <state relative-caret-position="327">
+              <caret line="75" column="48" selection-start-line="75" selection-start-column="48" selection-end-line="75" selection-end-column="48" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -235,8 +235,8 @@
         <option value="$PROJECT_DIR$/becquart_osteoanimalier/galery/models.py" />
         <option value="$PROJECT_DIR$/becquart_osteoanimalier/galery/templates/slideshow.html" />
         <option value="$PROJECT_DIR$/becquart_osteoanimalier/settings.py" />
-        <option value="$PROJECT_DIR$/becquart_osteoanimalier/templates/base.html" />
         <option value="$PROJECT_DIR$/becquart_osteoanimalier/static/css/base.css" />
+        <option value="$PROJECT_DIR$/becquart_osteoanimalier/templates/base.html" />
       </list>
     </option>
   </component>
@@ -537,16 +537,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/becquart_osteoanimalier/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2032">
-          <caret line="127" column="13" selection-start-line="127" selection-start-column="13" selection-end-line="127" selection-end-column="13" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
@@ -610,6 +600,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/becquart_osteoanimalier/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="75" column="48" selection-start-line="75" selection-start-column="48" selection-end-line="75" selection-end-column="48" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
