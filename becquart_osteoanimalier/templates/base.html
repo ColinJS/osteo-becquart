@@ -133,9 +133,11 @@
     <script>
         {% if valid.status %}
             function goToId() {
-              if (!window.location.hash) window.location = window.location + '#contact';
+              if(!window.location.hash){
+                window.location = window.location + '#contact';
+               }
             }
-            $(window).on("load", goToId);
+            window.onload = goToId;
         {% endif %}
 
         var imageContainer = document.getElementById("logo-click")
