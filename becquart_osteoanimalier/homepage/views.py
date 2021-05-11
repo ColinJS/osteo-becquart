@@ -15,8 +15,8 @@ def home_page(request):
         valid = {"status": True, "message": "Message envoyé avec succès"}
         if form.is_valid():
             subject = form.cleaned_data['subject']
-            from_email = form.cleaned_data['from_email']
-            message = form.cleaned_data['message']
+            from_email = "js_colin@hotmail.fr"
+            message = "Message de: "+form.cleaned_data['from_email']+"\n\r"+form.cleaned_data['message']
             try:
                 send_mail(subject, message, from_email, ['becquart.osteo@gmail.com'])
             except BadHeaderError:
