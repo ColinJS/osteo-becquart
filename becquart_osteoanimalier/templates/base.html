@@ -131,6 +131,12 @@
         </div>
     </footer>
     <script>
+        {% if valid.status %}
+            function goToId() {
+              if (!window.location.hash) window.location = window.location + '#contact';
+            }
+            $(window).on("load", goToId);
+        {% endif %}
 
         var imageContainer = document.getElementById("logo-click")
         var menu = document.getElementById('menu-container');
