@@ -143,9 +143,11 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'becquart_osteoanimalier/static'),
                     ]
 
 # Mail config
+SENDGRID_API_KEY = os.getenv('SENDGRID_API_KEY')
+
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.sendgrid.net'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = "apikey"
-EMAIL_HOST_PASSWORD = "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"
+EMAIL_HOST_PASSWORD = SENDGRID_API_KEY
