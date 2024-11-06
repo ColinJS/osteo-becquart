@@ -2,4 +2,5 @@ from django.apps import AppConfig
 
 
 class HomepageConfig(AppConfig):
-    name = 'homepage'
+    name = "website.homepage"
+    label = "homepage"

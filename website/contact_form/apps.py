@@ -2,4 +2,5 @@ from django.apps import AppConfig
 
 
 class ContactFormConfig(AppConfig):
-    name = 'contact_form'
+    name = 'website.contact_form'
+    label = 'contact_form'

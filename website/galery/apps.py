@@ -2,4 +2,5 @@ from django.apps import AppConfig
 
 
 class GaleryConfig(AppConfig):
-    name = 'galery'
+    name = "website.galery"
+    label = "galery"
